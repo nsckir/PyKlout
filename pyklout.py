@@ -146,7 +146,7 @@ class Klout(object):
 
         url = '/v2/identity.json/%s'
         
-        if not network_id or network not in ['tw', 'ks','twitter']:
+        if not network_id or network not in ['tw', 'ks','twitter', 'ig']:
             raise KloutError(0, 'Insufficient parameters')
 
         if isinstance(network_id, str):
